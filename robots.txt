@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://cheerful-beignet-97941f.netlify.app/sitemap.xml

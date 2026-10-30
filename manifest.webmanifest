@@ -1,0 +1,54 @@
+{
+ "name": "J-a · j-a_Market",
+ "short_name": "J-a",
+ "start_url": "./",
+ "scope": "./",
+ "display": "standalone",
+ "background_color": "#ffffff",
+ "theme_color": "#D91E2E",
+ "lang": "fr",
+ "icons": [
+  {
+   "src": "icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png",
+   "purpose": "any maskable"
+  },
+  {
+   "src": "icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "any maskable"
+  }
+ ],
+ "id": "./",
+ "description": "J-A Market : achats locaux, commandes Gabon ⇄ Sénégal, courses au marché.",
+ "orientation": "portrait",
+ "categories": [
+  "shopping"
+ ],
+ "shortcuts": [
+  {
+   "name": "Mes commandes",
+   "short_name": "Commandes",
+   "url": "./?tab=orders",
+   "icons": [
+    {
+     "src": "icon-192.png",
+     "sizes": "192x192"
+    }
+   ]
+  },
+  {
+   "name": "Écrire au support",
+   "short_name": "Chat",
+   "url": "./?tab=chat",
+   "icons": [
+    {
+     "src": "icon-192.png",
+     "sizes": "192x192"
+    }
+   ]
+  }
+ ]
+}

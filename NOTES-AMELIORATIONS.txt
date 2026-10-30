@@ -1,0 +1,64 @@
+J-A MARKET — VERSION 3 (40 améliorations + bande défilante)
+
+BANDE DÉFILANTE (sous le menu du bas)
+ 1. Bande défilante placée SOUS la barre de menu, en bas de l'écran
+ 2. Logo J-A Market dans la bande
+ 3. Slogans de la marque (Ton style. Ton choix. Ton market. ...)
+ 4. Nouveaux produits ajoutés automatiquement (produits marqués "Nouveau", sinon les 3 derniers)
+ 5. Informations sur le site et la marque (livraison, paiements, marché, suivi)
+ 6. Pause quand on appuie ou survole la bande
+ 7. Vitesse de défilement calculée selon la longueur du contenu
+ 8. Contenu modifiable depuis le back-office (section "Bande défilante")
+ 9. Bouton ✕ pour masquer la bande, bouton "Infos" pour la rouvrir (mémorisé)
+10. Zone libre à droite de la bande : la bulle Netlify ne cache plus aucun texte ni bouton
+11. Menu, panier, bouton ↑ et calculatrice remontent automatiquement au-dessus de la bande
+12. Fondu doux sur les bords de la bande
+13. Un produit touché dans la bande ouvre sa fiche ; les liens "commandes / chat" ouvrent la page
+14. La bande s'efface quand le clavier est ouvert (champ de saisie actif)
+15. Mouvement réduit : la bande devient défilable à la main
+
+CONFORT D'UTILISATION
+16. Barre de progression de lecture en haut de l'écran
+17. En-tête compact et ombré quand on descend
+18. Logo cliquable : retour à l'accueil
+19. Indicateur animé de l'onglet actif dans le menu
+20. Pastille du nombre d'articles du panier sur "Accueil"
+21. Légère vibration au changement d'onglet
+22. Effet de pression sur les boutons
+23. Bonjour / Bonsoir selon l'heure
+24. Titre de l'onglet du navigateur selon la page
+25. Liens directs : ?tab=orders, ?tab=chat... et raccourcis d'application (appui long sur l'icône)
+26. Fenêtres : poignée, bouton ✕ et glisser vers le bas pour fermer
+27. Page figée derrière une fenêtre ouverte (plus de défilement parasite)
+28. Messages (toast) repositionnés sous l'en-tête et fermables d'un toucher
+29. Message "Connexion rétablie" au retour du réseau
+30. Images chargées en différé (plus rapide)
+31. Mode économie de données automatique (connexion lente ou économie activée)
+
+ACCESSIBILITÉ, SEO, PERFORMANCE
+32. Lien "Aller au contenu" pour clavier et lecteurs d'écran
+33. Repères ARIA : navigation, page courante, logo accessible
+34. Impression propre (menu et bande masqués)
+35. Préconnexion aux polices Google (affichage plus rapide)
+36. Données structurées (Store) pour Google
+37. Image de partage corrigée (elle pointait vers un autre site Netlify) + cartes Twitter/Open Graph complètes
+38. Page 404 personnalisée aux couleurs de la marque
+39. robots.txt + sitemap.xml
+40. Hors ligne : précache de l'accueil et des icônes (service worker), en-têtes de cache des icônes, manifeste enrichi (raccourcis, catégorie)
+41. Message si JavaScript est désactivé
+
+LA BULLE NETLIFY
+ La bande réserve ~68 px libres à droite : si la bulle apparaît (aperçus de déploiement), elle se place
+ sur cet espace vide. Pour la supprimer : Netlify > Site configuration > Deploy previews > désactiver
+ le "Netlify Drawer" / aperçus collaboratifs.
+
+MODIFIER LA BANDE
+ Connecté en administrateur : Admin > "Bande défilante" > un message par ligne > Enregistrer.
+ Les 2 premiers messages passent avant les nouveautés, les suivants après.
+
+À SAVOIR
+ - Les URL de sitemap, robots et données structurées utilisent https://cheerful-beignet-97941f.netlify.app :
+   à remplacer si tu branches un nom de domaine personnalisé.
+ - Aucune donnée Firebase n'est modifiée. Sauvegarde ta version actuelle avant de déployer.
+ - Correction : un ancien bloc de code en double (déclarant "_ra3" une 2e fois) provoquait une erreur
+   console et ne s'exécutait jamais. Je l'ai retiré : aucun changement de comportement, erreur supprimée.
